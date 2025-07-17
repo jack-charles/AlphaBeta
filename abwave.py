@@ -137,11 +137,7 @@ def calc_AlphaBetaWave(ABParameters:ABWaveInputData, dune_height_ratio:float):
     slurry_density = wec.calc_slurry_density(abp.fluid_density, abp.solid_absVol, solid_loading_oh)
     
     #calculate transport rate
-    if abp.model == 'SGS':
-        transport_velocity = wec.calc_horizontal_transport_SGS(equivalent_diameter, abp.solid_diameter, abp.solid_density * 8.34, abp.fluid_density, abp.fluid_viscosity, c, dune_height, abp.openhole_id)
-    elif abp.model == 'SGS alt':
-        transport_velocity = wec.calc_horizontal_transport_SGS_alt(equivalent_diameter, abp.solid_diameter, abp.solid_density * 8.34, abp.fluid_density, abp.fluid_viscosity, c, bed_width, wetted_perimeter)
-    elif abp.model == 'Oroskar':
+    if abp.model == 'Oroskar':
         transport_velocity = wec.calc_horizontal_transport_Oroskar(equivalent_diameter, abp.solid_diameter, abp.solid_density * 8.34, abp.fluid_density, abp.fluid_viscosity, c)
     elif abp.model == 'Oroskar mod':
         transport_velocity = wec.calc_horizontal_transport_OroskarMod(equivalent_diameter, abp.solid_diameter, abp.solid_density * 8.34, abp.fluid_density, abp.fluid_viscosity, c)
