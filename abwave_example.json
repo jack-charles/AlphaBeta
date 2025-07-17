@@ -1,0 +1,44 @@
+{
+    "Parameters": {
+        "openhole_id": 8.5,
+        "openhole_roughness": 0.05,
+        "screen_od": 6.25,
+        "screen_id": 5.0,
+        "screen_roughness": 0.007,
+        "centralizer_od": 7.25,
+        "washpipe_od": 4,
+        "washpipe_id": 3.5,
+        "washpipe_roughness": 0.007,
+        "solid_diameter": 0.0287,
+        "solid_density": 1.60,
+        "solid_loading": 0.75,
+        "solid_absVol": 0.0443,
+        "fluid_density": 8.80,
+        "fluid_viscosity": 1.2,
+        "model": "Oroskar"
+    },
+
+    "Units": {
+        "system_name": "SPE",
+        "angle": "degree",
+        "area": "ft2",
+        "capacity": "bbl/ft",
+        "concentration": "pptg",
+        "density_gas": "gas sg",
+        "density_liquid": "ppg",
+        "density_solid": "ppg",
+        "diameter": "in",
+        "force": "lbf",
+        "length": "ft",
+        "mass": "lbm",
+        "mass_gradient": "lbm/ft",
+        "mass_rate": "lbm/min",
+        "permeability": "mD",
+        "pressure": "psi",
+        "pressure_gradient": "psi/ft",
+        "temperature": "F",
+        "velocity": "ft/s",
+        "volume": "bbl",
+        "volumetric_rate": "bbl/min"
+    }
+}
